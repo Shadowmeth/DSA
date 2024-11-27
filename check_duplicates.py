@@ -22,6 +22,7 @@ def has_duplicate_value_linear(array):
     print(steps)
     return False
 
+
 def greatest_number(array):
     if not array:
         return None
@@ -30,5 +31,3 @@ def greatest_number(array):
         if array[i] > greatest:
             greatest = array[i]
     return greatest
-
-

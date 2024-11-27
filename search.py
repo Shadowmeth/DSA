@@ -2,6 +2,7 @@
 
 step_count = 0
 
+
 def linear_search(array, target):
     global step_count
     for index, element in enumerate(array):
@@ -11,6 +12,7 @@ def linear_search(array, target):
         elif element > target:
             break
     return None
+
 
 def binary_search(array, target):
     global step_count
@@ -29,9 +31,9 @@ def binary_search(array, target):
             lower_bound = midpoint + 1
     return None
 
+
 linear_search([3, 17, 75, 80, 202], 22)
-print(f'linear_search took {step_count} steps')
+print(f"linear_search took {step_count} steps")
 step_count = 0
 binary_search([3, 17, 75, 80, 202], 22)
-print(f'binary_search took {step_count} steps')
-
+print(f"binary_search took {step_count} steps")
