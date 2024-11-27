@@ -29,6 +29,7 @@ def selection_sort(array):
         if lowest_so_far != i:
             array[i], array[lowest_so_far] = array[lowest_so_far], array[i]
 
+
 def insertion_sort(array):
     if not array:
         return
@@ -40,9 +41,9 @@ def insertion_sort(array):
             array[j + 1] = array[j]
             j -= 1
         array[j + 1] = temp_value
-        print(f'PASS: {i}')
-        print(f'array: {array}')
-        
+        print(f"PASS: {i}")
+        print(f"array: {array}")
+
 
 array = [4, 2, 7, 1, 3]
 insertion_sort(array)
