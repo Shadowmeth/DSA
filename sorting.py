@@ -2,6 +2,9 @@ from typing import List
 
 
 def bubble_sort(array: List[int]) -> None:
+    if not array:
+        return
+
     unsorted_till_index = len(array) - 1
     sorted = False
     while not sorted:
@@ -26,7 +29,21 @@ def selection_sort(array):
         if lowest_so_far != i:
             array[i], array[lowest_so_far] = array[lowest_so_far], array[i]
 
+def insertion_sort(array):
+    if not array:
+        return
 
-array = [65, 55, 45, 35, 25, 15, 10]
-selection_sort(array)
+    for i in range(1, len(array)):
+        temp_value = array[i]
+        j = i - 1
+        while j >= 0 and array[j] > temp_value:
+            array[j + 1] = array[j]
+            j -= 1
+        array[j + 1] = temp_value
+        print(f'PASS: {i}')
+        print(f'array: {array}')
+        
+
+array = [4, 2, 7, 1, 3]
+insertion_sort(array)
 print(array)
