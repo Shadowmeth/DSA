@@ -1,6 +1,3 @@
-from itertools import count
-
-
 def sum(low, high):
     if high < low:
         return 0
@@ -128,22 +125,3 @@ def first_x(string, i=0):
 
 
 print(first_x("abcdefghijklmnopqrstuvwxyz"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
